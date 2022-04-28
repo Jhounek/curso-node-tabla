@@ -22,7 +22,7 @@ const crearArchivo = async(base = 5, listar = false, hasta = 10) => {
 
         listar ? console.log("===========================".america): '';
     
-        fs.writeFileSync(`./salida/tabla-${base}`, salida);
+        fs.writeFileSync(`./salida/tabla-${base}.txt`, salida);
     
         return (`Tabla-${base}.txt creada`.black.bgGreen.bold);
         
